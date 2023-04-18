@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dummy Website</title>
+  </head>
+  <body>
+    <h1>Welcome to the Dummy Website</h1>
+    <form>
+      <label for="search">Search:</label>
+      <input type="text" id="search" name="search" value="" />
+      <input type="submit" value="Submit" />
+    </form>
+    <p>
+      You searched for:
+      <script>
+        alert("XSS");
+      </script>
+    </p>
+  </body>
+</html>

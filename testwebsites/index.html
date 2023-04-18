@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dummy Website</title>
+    <script>
+      function displaySearchResult() {
+        var searchInput = document.getElementById("search").value;
+        var searchResult = document.getElementById("searchResult");
+        searchResult.textContent = "You searched for: ";
+        searchResult.insertAdjacentHTML("beforeend", searchInput);
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Welcome to the Dummy Website</h1>
+    <label for="search">Search:</label>
+    <input type="text" id="search" name="search" />
+    <button onclick="displaySearchResult()">Submit</button>
+    <div id="searchResult"></div>
+  </body>
+</html>
